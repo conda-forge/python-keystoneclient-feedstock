@@ -18,7 +18,7 @@ requirements:
   host:
     - pbr
     - pip
-    - python
+    - python >=3.6
     - setuptools
   run:
     - debtcollector
@@ -28,7 +28,7 @@ requirements:
     - oslo.serialization
     - oslo.utils
     - pbr
-    - python
+    - python >=3.6
     - requests
     - setuptools
     - six
