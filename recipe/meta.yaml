@@ -1,5 +1,5 @@
 {% set name = "python-keystoneclient" %}
-{% set version = "4.0.0" %}
+{% set version = "4.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6d93efd494b43d8b4cd8a62281c82d3f02aa531c5523e6bbe7d696e37bc77ba8
+  sha256: 7b9b99021358a4db20673d338ba42bc2bd8e7e969cfd777f68c600ae6a39cb1b
 
 build:
   number: 0
