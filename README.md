@@ -5,11 +5,13 @@ Home: https://github.com/openstack/python-keystoneclient
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-keystoneclient-feedstock/blob/master/LICENSE.txt)
 
 Summary: Client Library for OpenStack Identity
 
+Development: https://opendev.org/openstack/python-keystoneclient
 
+Documentation: https://docs.openstack.org/python-keystoneclient/latest/
 
 Current build status
 ====================
