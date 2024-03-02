@@ -28,11 +28,8 @@ requirements:
     - oslo.serialization
     - oslo.utils
     - packaging
-    - pbr
     - python >=3.8
     - requests
-    - setuptools
-    - six
     - stevedore
 
 test:
