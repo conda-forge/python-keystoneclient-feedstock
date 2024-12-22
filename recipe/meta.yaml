@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: c2f5934f95576936c98e45bf599ad48bcb0ac451593e5f8344ebf52cb0f411f5
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -18,7 +18,7 @@ requirements:
   host:
     - pbr
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools
   run:
     - debtcollector
@@ -28,11 +28,13 @@ requirements:
     - oslo.serialization
     - oslo.utils
     - packaging
-    - python >=3.8
+    - python >={{ python_min }}
     - requests
     - stevedore
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - keystoneclient
 
