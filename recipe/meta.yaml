@@ -1,16 +1,16 @@
 {% set name = "python-keystoneclient" %}
-{% set version = "5.5.0" %}
+{% set version = "5.6.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c2f5934f95576936c98e45bf599ad48bcb0ac451593e5f8344ebf52cb0f411f5
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 721de2aec7710076389c674ee27b6712e97d86c7e0ff487b0b4409c8fcee10e7
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
